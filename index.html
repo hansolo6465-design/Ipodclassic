@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>iPod Classic</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <div class="scaler" id="scaler">
+    <div class="ipod" id="ipod">
+      <div class="screen-frame">
+        <div class="screen" id="screen">
+          <div class="status">
+            <span class="st-play" id="stPlay"></span>
+            <span class="st-title" id="stTitle">iPod</span>
+            <span class="battery" id="battery"><i></i></span>
+          </div>
+          <div class="view" id="view"></div>
+          <div class="toast" id="toast"></div>
+        </div>
+      </div>
+      <div class="wheel" id="wheel">
+        <span class="lbl menu">MENU</span>
+        <span class="lbl next"><svg viewBox="0 0 24 12"><path d="M2 0v12l9-6zM13 0v12l9-6z"/></svg></span>
+        <span class="lbl prev"><svg viewBox="0 0 24 12"><path d="M11 0v12L2 6zM22 0v12L13 6z"/></svg></span>
+        <span class="lbl pp"><svg viewBox="0 0 24 12"><path d="M0 0v12l9-6zM13 0h3v12h-3zM19 0h3v12h-3z"/></svg></span>
+        <div class="center" id="center"></div>
+      </div>
+    </div>
+  </div>
+  <div class="tb"><button id="snd"></button><button id="gear">Customize</button></div>
+  <aside class="panel" id="panel"></aside>
+</main>
+<input type="file" id="file" accept="audio/*,.mp3,.m4a,.aac,.wav,.flac,.ogg,.opus" multiple hidden>
+<audio id="audio" preload="auto"></audio>
+<script src="demo-songs.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
